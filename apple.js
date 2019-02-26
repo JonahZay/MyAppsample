@@ -17,7 +17,7 @@
 //
 //
 // b();
-console.log('hello jonathan');
+
 
 
 // function waitThreeSeconds (){
