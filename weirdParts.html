@@ -3,11 +3,91 @@
   <head>
     <script src="apple.js"></script>
       <script type="text/javascript">
-      var a ={
-      firstname:'jonathan',
-      lastname:'aquino'
-    }
-      console.log(a);
+
+
+
+
+
+
+
+//     function greet(){
+//       console.log('hi');
+//     }
+//     greet();
+//    var anonymousGreet = function () {
+//      console.log('hi');
+//    }
+//
+//    //function are objects
+//    anonymousGreet();
+//
+//
+// function log(a){
+//
+//   a();
+// }
+// log(function () {
+//   console.log('hi');
+//
+// });
+
+
+
+var a = 3;
+var d;
+
+d = a;
+a=2;//mutate
+console.log(a);
+console.log(d);
+//by ref(all objects including functions)
+var c={
+  greeting:'hello'
+};
+var b;
+b=c;
+c.greeting='hola';//mutate
+
+console.log(c);
+console.log(b);
+
+//by ref(even parameters)
+// function changeGreeting(obj) {
+//   obj.greeting = 'Hola';
+//
+//
+// }
+// changeGreeting(b);
+// console.log(c);
+// console.log(b);
+//
+// b={greeting:'HI'};
+// console.log(c);
+// console.log(b);
+
+
+
+anonymousChange(function(){
+
+  b.greeting='Fuck you';
+  console.log(c);
+  console.log(b);
+})
+
+function anonymousChange(a){
+a();
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
     </script>
